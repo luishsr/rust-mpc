@@ -47,4 +47,12 @@ This starts the Prover, ready to receive transactions from users and interact wi
     ```bash
     cargo run --bin user_tui
 
-Alternatively, you can simulate user transactions using nc or similar tools.
+Alternatively, you can simulate user transactions using nc.
+
+If manually sending transactions, connect to the Prover using nc and enter transaction data:
+
+nc localhost 7878  
+{"from":"Alice","to":"Bob","amount":100}  
+{"from":"Charlie","to":"Dave","amount":50}
+
+Press Enter after each transaction and use Ctrl+D (Linux/Mac) or Ctrl+Z followed by Enter (Windows) to end the transmission.
