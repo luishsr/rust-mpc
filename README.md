@@ -51,7 +51,6 @@ Alternatively, you can simulate user transactions using nc.
 
 If manually sending transactions, connect to the Prover using nc and enter transaction data:
 
-      ```bash
       nc localhost 7878  
       {"from":"Alice","to":"Bob","amount":100}  
       {"from":"Charlie","to":"Dave","amount":50}
